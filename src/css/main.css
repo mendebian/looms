@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    height: 100vh;
+}
+
+main {
+    color: var(--font-primary);
+    background-color: var(--background-primary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.views {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.bottom-navigation {
+    padding: 0.5rem;
+    border-top: solid 1px var(--border-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+}
+
+.failed {
+    width: 100%;
+    padding: 1rem 0rem;
+    color: var(--font-secondary);
+    text-align: center;
+}
+
+.post-container {
+    padding: 1rem 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.post-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-interaction-content {
+    font-size: 14px;
+}
+
+.post-interaction-content {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.post-interaction {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.expanded-post-details {
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.expanded-post-author {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expanded-post-text {
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    border-bottom: solid 1px var(--background-secondary);
+}
+
+.expanded-post-footer {
+    padding: 0.5rem;
+    color: var(--font-secondary);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--background-secondary);
+}
+
+.expanded-post-counts {
+    display: flex;
+    gap: 1rem;
+}
+
+.expanded-reply-container {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: solid 1px var(--background-secondary);
+}
+
+.post-reply-to-container,
+.expanded-reply-to-container {
+    display: flex;
+}
+
+.expanded-reply-to-container  {
+    padding: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.post-reply-to,
+.expanded-reply-to,
+.update-type {
+    color: var(--font-secondary);
+}
+
+.tab-icon,
+.post-icon,
+.profile-icon,
+.edit-profile-icon,
+.query-icon,
+.expanded-post-icon,
+.inbox-icon {
+    border-radius: 50%;
+    border: solid 1px var(--border-color);
+}
+
+.tab-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.post-icon,
+.inbox-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.query-icon,
+.expanded-post-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.profile-icon,
+.edit-profile-icon {
+    width: 96px;
+    height: 96px;
+}
+
+.post-author,
+.profile-display-name,
+.expanded-post-name {
+    font-weight: 600;
+}
+
+.expanded-post-tag {
+    color: var(--font-secondary);
+}
+
+.post-tag,
+.profile-tag {
+    font-weight: 500;
+}
+
+.post-text,
+.expanded-post-text {
+    white-space: pre-wrap;
+    font-size: 18px;
+}
+
+.settings-container,
+.discover-container,
+.edit-container {
+    padding: 0.5rem;
+}
+
+.new-container {
+    height: 93vh;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.new-header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1rem;
+}
+
+.new-content {
+    height: 100%;
+}
+
+.post-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-tag,
+.post-footer,
+.profile-tag,
+.profile-network {
+    color: var(--font-secondary);
+}
+
+.settings-content,
+.edit-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.edit-content {
+    align-items: center;
+}
+
+.profile-content {
+    border-bottom: solid 1px var(--border-color);
+    padding: 1rem 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-description {
+    width: 100%;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.profile-network {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.profile-count {
+    display: flex;
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-edit,
+.profile-follow,
+.profile-unfollow,
+.profile-share,
+.edit-save, 
+.new-publish {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: solid 1px var(--border-color);
+}
+
+.profile-follow,
+.edit-save,
+.new-publish {
+    background-color: var(--font-primary);
+    color: var(--background-primary);
+}
+
+.profile-edit, 
+.profile-unfollow,
+.profile-share {
+    color: var(--font-secondary);
+    background: var(--background-secondary);
+}
+
+.profile-edit,
+.profile-follow,
+.profile-unfollow {
+    width: 100%;
+}
+
+.inbox-container {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.inbox-content {
+    padding: 0.5rem;
+    background: var(--background-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: solid 1px var(--border-color);
+    border-radius: 0.5rem;
+}
+
+.update-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.query-container {
+    margin-top: 0.5rem;
+    overflow-y: auto;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.query-content {
+    padding: 1rem;
+    background: var(--background-secondary);
+    min-width: 120px;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border: solid 1px var(--border-color);
+    border-radius: 0.5rem;
+}
+
+.inbox-badge {
+    width: 14px;
+    height: 14px;
+    background-color: var(--icons-color);
+    border-radius: 50%;
+    border: var(--background-primary) solid 3px;
+    position: absolute;
+}
+
+@media only screen and (min-width: 760px) {
+    main {
+        width: 760px;
+        margin: 0 auto;
+        border-left: solid 1px var(--border-color);
+        border-right: solid 1px var(--border-color);
+    }
+}
