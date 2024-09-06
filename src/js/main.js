@@ -1,5 +1,5 @@
 import axios from 'https://cdn.jsdelivr.net/npm/axios@1.5.0/dist/esm/axios.min.js';
-import { auth, signOut, database, get, set, databaseRef, update, push, query, child, onValue, uploadBytesResumable, storageRef, getDownloadURL, remove } from '../../firebase.js';
+import { auth, signOut, database, get, set, databaseRef, update, push, query, child, onValue, uploadBytesResumable, storage, storageRef, getDownloadURL, remove } from '../../firebase.js';
 
 let currentUser, iconFile;
 
